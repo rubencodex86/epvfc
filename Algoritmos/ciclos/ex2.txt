@@ -1,0 +1,49 @@
+Algoritmo Votar
+
+Início
+
+var ano_nasc, idade, ano_atual :inteiro
+
+    ano_atual <- 2023;
+    Escrever("Introduza o ano de nascimento");
+    Ler ano_nasc;
+    idade <- ano_atual - ano_nasc;
+    Se (idade < 18) Então
+
+
+
+
+
+
+
+
+Algoritmo Promocao
+
+Inicio
+var nome :string;
+var sexo :string;
+var val_compras novo_val :real;
+
+    Escrever ("Introduza nome")
+    Ler nome;
+    Escrever ("Introduza sexo")
+    Ler sexo;
+    Escrever ("Introduza valor das compras")
+    Ler val_compras;
+
+    Se (sexo == "m") Então
+        novo_val <- val_compras*0.95;
+    Senão
+        novo_val <- val_compras*0.87;
+    Fim se
+    Escrever("O preço total é: "+novo_val)
+Fim
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+algoritmo "ProcedimentoCompara"
+
+var num_1, num_2 :real
+
+    procedimento Maior( val_1, val_2 :real)
+    inicio
+        Se(val_1>val_2) Então
+            Escreva(val_1);
+        SeNão
+            Se(val_1<val_2) Então
+                Escreva (val_2);
+            SeNão
+                Escreva("Os valores são iguais");
+            FimSe
+        FimSe
+    fimprocedimento
+
+inicio
+
+    Escreva("Introduza um numero: ")
+    Ler(num_1);
+    Escreva("Introduza um numero: ")
+    Ler(num_2);
+
+    Maior(num_1, num_2);
+
+fimalgoritmo
+
+
+
+/////////////////// com arrays
+
+
+
+
+algoritmo "ProcedimentoCompara"
+
+var num[2] :real;
+    i :inteiro;
+
+    procedimento Maior( val[2] :real) // com 2 numeros
+    inicio
+        Se(val[0]>val[1]) Então
+            Escreva(val[0]);
+        SeNão
+            Se(val[0]<val[1]) Então
+                Escreva (val[1]);
+            SeNão
+                Escreva("Os valores são iguais");
+            FimSe
+        FimSe
+    fimprocedimento
+
+inicio
+
+    Para i de 0 até 1
+        Escrever("Introduza um número: ");
+        Ler(num[i]);
+    FimPara
+
+    Maior(num[0], num[1]);
+
+fimalgoritmo

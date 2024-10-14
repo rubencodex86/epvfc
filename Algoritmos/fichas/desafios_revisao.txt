@@ -1,0 +1,29 @@
+// Desafio_1_Revisoes
+
+Algoritmo num_denom
+
+Inicio
+
+var numerador, denominador :inteiro;
+    S   :real;
+
+    numerador <- 21;
+    denominador <- 50;
+    S <- 0;
+
+    Enquanto (numerador <= 70 && denominador >=1) Faça
+
+        //Escrever("S= "+numerador/denominador);
+        S <- S + numerador/denominador
+        numerador <- numerador++
+        denominador <- denominador--
+
+    FimEnquanto
+
+    Escrever(S);
+Fim
+
+
+// Desafio_2_Revisoes -> For (porque eu sei quantos/quais sao os funcionarios). Se encadeado dentro do For
+
+Algoritmo

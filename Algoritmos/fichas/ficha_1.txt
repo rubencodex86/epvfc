@@ -1,0 +1,125 @@
+1)
+
+Algoritmo Calculo_Area_Triangulo
+
+var base, altura, area :real;
+
+Inicio
+    Ler base;
+    Ler altura;
+    area <- ((base*altura)/2);
+    Escrever "A área do triângulo é" + area;
+Fim
+
+
+
+2)
+
+Algoritmo Operacoes_Aritmeticas
+
+var numero_1, numero_2, soma, subtracao, multiplicacao :real;
+
+Inicio
+    Ler numero_1;
+    Ler numero_2;
+    soma <- numero_1 + numero_2;
+    subtracao <- numero_1 - numero_2;
+    multiplicacao <- numero_1 * numero_2;
+    Escrever "A soma dos numeros é" + soma;
+    Escrever "A subtracao dos numeros é" + subtracao;
+    Escrever "A multiplicacao dos numeros é" + multiplicacao;
+Fim
+
+
+
+3)
+
+Algoritmo Troca_AB
+
+var temp :real;
+
+real A = 10;
+real B = 20;
+
+Inicio
+    temp <- A
+    A <- B
+    B <- temp
+    Escrever "O valor de A é:" + A + "e de B:" + B;
+Fim
+
+
+
+4)
+
+Algoritmo Antes_Depois
+
+var valor :real;
+
+Inicio
+    Ler valor;
+    Escrever "O valor anterior é:" + valor--;
+    Escrever "O valor seguinte é:" + valor++;
+Fim
+
+
+
+5)
+
+a)
+output1: 20
+output2: 10, 5
+
+b)
+output1: 50
+output2: 10, 50
+output3: 30, 10, 40
+
+c)
+output1: 10, 10, 10
+
+d)
+output1: 12
+output2: 14, 13
+
+e)
+output1: 10, 20, 15
+
+f)
+output1: 1
+output2: 5, 6, 1
+
+
+
+6)
+
+a) verdadeiro
+b) falso (4 <> 2.5)
+c) falso (0 <> 4)
+
+
+
+7)
+
+Algoritmo Percentual_Tipo_Voto
+
+var total, brancos, nulos, validos :inteiro;
+
+var percent_brancos, percent_nulos, percent_validos :real;
+
+Inicio
+    Ler brancos
+    Ler nulos
+    Ler validos
+    total <- brancos + nulos + validos;
+    percent_brancos <- (brancos * 100)/total;
+    percent_nulos <- (nulos * 100)/total;
+    percent_validos <- (validos * 100)/total;
+    Escrever "A percentagem de votos brancos é:" + percent_brancos;
+    Escrever "A percentagem de votos nulos é:" + percent_nulos;
+    Escrever "A percentagem de votos validos é:" + percent_validos;
+Fim
+
+
+
+

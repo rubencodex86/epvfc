@@ -1,0 +1,207 @@
+1)
+
+Algoritmo Maior_que_dez
+
+Inicio
+
+var valor :real;
+
+    Escrever("Introduza um valor: ");
+    Ler valor;
+
+    Se (valor > 10) Então
+        Escrever("É maior que 10!");
+    SeNão
+        Escrever("Não é maior que 10!");
+    FimSe
+
+Fim
+
+
+
+2)
+
+Algoritmo Horas_trabalho
+
+Inicio
+
+var horas_mes, salario_hora, salario_total :real;
+
+    Escrever("Quantas horas o funcionário trabalhou este mês? ");
+    Ler horas_mes;
+    Escrever("Qual o valor por hora do funcionário? ");
+    Ler salario_hora;
+
+    Se (horas_mes > 160) Então
+        salario_total <- ((salario_hora * 160) + (salario_hora * (horas_mes - 160)));
+        Escrever("O funcionário irá receber, este mês: "+salario_total);
+    SeNão
+        salario_total <- salario_hora * 160;
+        Escrever("O funcionário irá receber, este mês: "+salario_total);
+    FimSe
+
+Fim
+
+
+
+3)
+
+Algoritmo Corrigido
+
+Inicio
+
+var nome, sexo :string;
+    altura, peso_ideal :real;
+
+    Escrever("Introduza o nome: ");
+    Ler nome;
+    Escrever("Introduza o sexo: ");
+    Ler sexo;
+    Escrever("Introduza a altura: ");
+    Ler altura;
+
+    Se (sexo == "m") Entao
+        peso_ideal <- (72.7 * altura) - 58;
+        Escrever("O seu peso ideal é: "+peso_ideal);
+    SeNão
+        peso_ideal <- (62.1 * altura) - 44.7;
+        Escrever("O seu peso ideal é: "+peso_ideal);
+    FimSe
+
+Fim
+
+
+
+4)
+
+Algoritmo Soma_maiores
+
+Inicio
+
+var val_1, val_2, val_3 :real;
+
+    Escrever("Insere o valor 1: ");
+    Ler val_1;
+    Escrever("Insere o valor 2: ");
+    Ler val_2;
+    Escrever("Insere o valor 3: ");
+    Ler val_3;
+
+    Se (val_1>val_2 && val_2>val_3) Então
+        Escrever("A soma dos 2 maiores valores é: "+(val_1+val_2));
+    SeNão
+        Se (val_1>val_2 && val_2<val_3) Então
+            Escrever("A soma dos 2 maiores valores é: "+(val_1+val_3));
+        SeNão
+            Escrever("A soma dos 2 maiores valores é: "+(val_2+val_3));
+        FimSe
+    FimSe
+Fim
+
+
+
+5)
+
+  z  | Resposta
+ -----------------
+ 11  |      B
+ 455 |      C
+ -2  |      A
+ -5  |      A
+ 155 |      C
+
+
+
+6)
+
+Algoritmo Peso_Terra
+
+Inicio
+
+var PesoNaTerra, PesoNoPlaneta, GravidadeRelativa :real;
+    Planeta :String;
+
+    Escrever("Insira o seu peso: ");
+    Ler PesoNaTerra;
+
+    Escrever("Escolha um planeta: ");
+    Ler Planeta;
+    Se (Planeta == "Mercúrio") Então
+        GravidadeRelativa <- 0.37;
+    SeNão
+        Se (Planeta == "Vênus") Então
+            GravidadeRelativa <- 0.88;
+        SeNão
+            Se (Planeta == "Marte") Então
+                GravidadeRelativa <- 0.38;
+            SeNão
+                Se (Planeta == "Júpiter") Então
+                    GravidadeRelativa <- 2.64;
+                SeNão
+                    Se (Planeta == "Saturno") Então
+                        GravidadeRelativa <- 1.15;
+                    SeNão
+                        GravidadeRelativa <- 1.17;
+                    FimSe
+                FimSe
+            FimSe
+        FimSe
+    FimSe
+
+    Escolha(Planeta)
+
+        caso(Planeta == "Mercúrio"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+        caso(Planeta == "Vênus"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+        caso(Planeta == "Marte"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+        caso(Planeta == "Júpiter"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+        caso(Planeta == "Saturno"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+        caso(Planeta == "Urano"):
+        PesoNoPlaneta <- PesoNaTerra / 10 * GravidadeRelativa;
+        Escrever("O seu peso em "+Planeta+" é "+PesoNoPlaneta+" kg");
+        Pare;
+
+    FimEscolha;
+Fim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

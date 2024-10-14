@@ -1,0 +1,170 @@
+Avaliação Sumativa
+UFCD 0804 Algoritmos
+
+Rúben Paulo Medeiros Roia    05/01/2024
+
+
+
+
+
+1)
+
+Algoritmo Soma
+
+Inicio
+
+var num_1, num_2, num_3 :inteiro;
+    S :real;
+
+    num_1 <- 37;
+    num_2 <- 38;
+    num_3 <- 1;
+    S <- 0;
+
+    Enquanto ( num_1 >= 1 && num_2 >= 2 && num_3 <= 37 ) Faça
+
+        S <- S + ((num_1 * num_2)/num_3);
+        num_1 <- num_1--;
+        num_2 <- num_2--;
+        num_3 <- num_3++;
+
+    FimEnquanto
+Fim
+
+
+
+2)
+
+Algoritmo Educacao_Fisica
+
+Inicio
+
+var num_alunos, num_homem, num_mulher, matricula, status_fisico, fem_sup, man_bom :inteiro;
+    sexo :string;
+    altura :real;
+
+    num_alunos <- 20;
+
+    num_homem <- 0;
+    num_mulher <- 0;
+
+    fem_sup <- 0;
+    man_bom <- 0;
+
+    matricula <- 0;
+    status_fisico <- 0;
+
+    Faz
+
+        Escrever("Introduza o número de matrícula: ");
+        Ler matricula;
+
+        Escrever("Introduza o sexo do aluno (m/f): ");
+        Ler sexo;
+
+        // contar alunos por sexo
+        Se (sexo = m) Então
+            num_homem <- num_homem++;
+        SeNão
+            num_mulher <- num_mulher++;
+        FimSe
+
+        Escrever("Introduza a altura do aluno (cm): ");
+        Ler altura;
+
+        // contar sexo feminino e altura superior a 170
+        Se (sexo = f && altura > 170) Então
+            fem_sup <- fem_sup++;
+        FimSe
+
+        Escrever("Classifique o status físico do aluno (1- bom, 2- regular, 3- ruim): ");
+        Ler status_fisico;
+
+        // contar sexo masculino e status fisico bom
+        Se (sexo = m && status_fisico = 1) Então
+            man_bom <- man_bom++;
+        FimSe
+
+        num_alunos <- num_alunos--;
+
+    Enquanto (num_alunos > 0)
+
+    // a)
+    Escrever("A quantidade de alunos do sexo feminino e altura superior a 170cm é: "+fem_sup);
+
+    // b)
+    Escrever("A % de alunos do sexo masculino (em relação ao total do mesmo sexo) cujo status fisico é bom: "+(man_bom/num_homem)*100+"%");
+
+Fim
+
+
+
+3)
+
+Algoritmo Area_terreno
+
+Inicio
+
+var comprimento, largura :real;
+    continuar :string;
+
+    comprimento <- 0;
+    largura <- 0;
+
+    Faz
+
+        Escrever("Introduza o comprimento do terreno: ");
+        Ler comprimento;
+
+        Escrever("Introduza a largura do terreno: ");
+        Ler largura;
+
+        Escrever("A área do terreno é de: "comprimento*largura);
+
+        Escrever("Quer calcular a área de outro terreno? (sim/não): ");
+        Ler continuar
+
+    Enquanto (continuar = sim)
+
+Fim
+
+
+
+4)
+
+------------------------------------------------------------
+  A  |  C  |  I  |  B  |  J  |   K   |  Valo(es) escrito(s)
+------------------------------------------------------------
+ 32  |  2  |  5  |  2  | 1.5 |       |
+     |     |     |     |     | 27.16 |
+     |     |     |     |     |       |  B=2
+     |     |     |     |     |       |  J=1.5
+     |     |     |     |     |       |  K=27.156
+
+
+
+5)
+
+----------------------------------
+  S  |  I  |  Valo(es) escrito(s)
+----------------------------------
+  0  |  1  |
+  1  |  2  |    I=2
+  3  |  3  |    I=3
+  6  |  4  |    I=4
+  10 |  5  |    I=5
+  15 |  6  |    I=6
+  21 |  7  |    I=7
+  28 |  8  |    I=8
+  36 |  9  |    I=9
+  45 |  10 |    I=10
+  55 |  11 |    I=11
+     |     |    S=55
+
+
+
+
+
+
+
+

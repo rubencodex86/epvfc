@@ -1,0 +1,41 @@
+1. Descrever Sequência lógica:
+
+1.1. Comer:
+Inicio
+    Pegar no garfo
+    Colocar comida no garfo
+    Levar o garfo à boca
+    Abrir a boca
+    Meter a comida dentro da boca
+    Fechar a boca
+    Mastigar a comida
+    Engolir
+Fim
+
+
+1.2. Para ferver água:
+Inicio
+    Pegar num recipiente
+    Abrir a torneira
+    Encher o recipiente com água
+    Fechar a torneira
+    Levar o recipiente para o fogão
+    Pousar o recipiente
+    Rodar o manípulo (para acender o lume)
+    Colocar uma tampa no tacho
+    Esperar que a água atinja 100º
+    Rodar o manípulo (para apagar o lume)
+Fim
+
+
+1.3. Para trocar uma lâmpada fundida:
+Inicio
+    Rodar a lâmpada (fundida)
+    Retirar a lâmpada
+    Pousar a lâmpada
+    Pegar na embalagem com a lâmpada (nova)
+    Abrir a embalagem
+    Retirar a lâmpada da embalagem
+    Colocar a lâmpada (no candeeiro)
+    Rodar a lâmpada
+Fim

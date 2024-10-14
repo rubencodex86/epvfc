@@ -1,0 +1,20 @@
+Desafio- Faça um algoritmo que mostre no monitor a seguinte
+contagem:
+
+
+0 3 6 9 12 15 18 Acabou!
+
+
+
+
+Algoritmo tres_tres
+
+Início
+
+var contador :inteiro;
+
+    Para contador <- 0 até 6 Faça
+        Escrever(3*contador);
+    FimPara
+
+Fim

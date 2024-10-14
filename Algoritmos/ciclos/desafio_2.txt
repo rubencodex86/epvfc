@@ -1,0 +1,33 @@
+¡Crie um algoritmo que através da introdução do
+salário, calcule o imposto pago por homens e mulheres, sabendo que as mulheres
+pagam 10% de imposto e os homens pagam 12% de imposto.
+
+
+
+
+Algoritmo Imposto_sexo
+
+Inicio
+
+var salario, imposto :real;
+    sexo :string;
+
+    Escrever("Introduza o salario");
+    Ler salario;
+    Escrever("Introduza o sexo");
+    Ler sexo;
+
+    Escolha (sexo)
+        caso ("m"):
+            imposto <- salario * 0.12;
+            Escrever("O imposto pago foi de "+imposto);
+            Pare;
+        caso ("f"):
+            imposto <- salario * 0.10;
+            Escrever("O imposto pago foi de "+imposto);
+            Pare;
+    FimEscolha
+
+Fim
+
+

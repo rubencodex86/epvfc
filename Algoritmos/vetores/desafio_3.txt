@@ -1,0 +1,52 @@
+Algoritmo Ler_nota
+
+Inicio
+
+var notas[10], media, maior_nota, pos_maior, maiores[10], soma :real;
+    contador, acima_media :inteiro;
+
+    media <- 0;
+
+    Para contador de 0 até 9
+        Escrever("Escreva a nota do aluno nº "+(contador+1)+": ");
+        Ler(notas[contador]);
+
+        // a) média da turma
+        // media <- (media + notas[contador])/(contador+1);
+        soma <- soma + notas[contador]
+    FimPara
+
+    media <- soma / 10;
+
+    acima_media <- 0;
+    maior_nota <- notas[0];
+    pos_maior <- 0;
+
+    Para contador de 0 até 9
+
+        // b) qtos acima da media
+        Se (notas[contador] > media) Então
+            acima_media <- acima_media++;
+        FimSe
+
+        // c) e d) maior nota e posição
+        Se (notas[contador] >= maior_nota) Então
+            maior_nota <- notas[contador];
+            maiores[contador] <- contador;
+        SeNao
+            maiores[contador] <- 0;
+        FimSe
+
+    FimPara
+
+    Escrever("A média da turma é: "+media);
+    Escrever("Existem "+acima_media+" alunos acima da média.");
+    Escrever("A maior nota introduzida foi: "+maior_nota);
+
+    //Escrever("A maior nota encontra-se na posição: "+pos_maior);
+    Para contador de 0 até 9
+        Se maiores[contador] <> 0 Então;
+            Escreve (contador);
+        FimSe
+    FimPara
+Fim

@@ -1,0 +1,38 @@
+Escreva um algoritmo que leia dois números
+inteiros e compare-os, mostrando no monitor uma das mensagens abaixo:
+
+
+  -
+O primeiro valor é o maior
+
+
+  -
+O segundo valor é o maior
+
+
+  -
+Não existe valor maior, os dois são iguais
+
+
+
+
+Algoritmo Compara_Inteiros
+
+Inicio
+var numero1, numero2 :inteiro;
+
+    Escrever("Introduz um número inteiro: ");
+    Ler numero1;
+    Escrever("Introduz um número inteiro: ");
+    Ler numero2;
+
+    Se (numero1 > numero2) Então
+        Escrever("O número "+numero1+" é maior do que "+numero2);
+    Senão
+        Se (numero1 < numero2) Então
+            Escrever("O número "+numero2+" é maior do que "+numero1);
+        Senão
+            Escrever("Os números são iguais!");
+        FimSe
+    FimSe
+Fim

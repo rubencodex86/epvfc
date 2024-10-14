@@ -1,0 +1,32 @@
+Algoritmo tres_tres
+
+Inicio
+
+var contador :inteiro;
+
+    contador <- 0;
+
+    Faz
+        Escrever (3*contador);
+        contador <- contador+1;
+
+    Enquanto (contador <= 6 )
+Fim
+
+
+
+
+Algoritmo dez_tres
+
+Inicio
+
+var contador :inteiro;
+
+    contador <- 10;
+
+    Faz
+        Escrever (contador);
+        contador <- contador-1;
+
+    Enquanto (contador >= 3)
+Fim

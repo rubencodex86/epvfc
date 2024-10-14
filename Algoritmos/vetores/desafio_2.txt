@@ -1,0 +1,18 @@
+Algoritmo Posicao_pares
+
+Inicio
+
+var numeros[10], contador :inteiros;
+
+    Para contador de 0 até 9
+        Escrever("Introduza um numero: ");
+        Ler(numeros[contador]);
+    FimPara
+
+    Para contador de 0 até 9
+        Se (numeros[contador]%2 = 0) então
+            Escrever("O número "+numeros[contador]+" é par e está armazenado na posição: "+contador);
+        FimSe
+    FimPara
+
+Fim

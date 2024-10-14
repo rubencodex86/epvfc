@@ -1,0 +1,186 @@
+1)
+
+Algoritmo Divide_quatro
+
+Inicio
+
+var contador :inteiro;
+
+    Para contador de 30 até 1 passo -1 Faça
+
+        Se (contador%4 == 0) Então
+            Escrever("["+contador+"]");
+        SeNão
+            Escrever(contador);
+        FimSe
+
+    FimPara
+
+Fim
+
+
+
+2)
+
+Algoritmo Valores_intervalo
+
+Inicio
+
+var valor_inicial, valor_final, incremento, contador :real;
+
+    Escrever("Insira o valor inicial da contagem: ");
+    Ler valor_inicial;
+    Escrever("Insira o valor final da contagem: ");
+    Ler valor_final;
+
+    Enquanto (valor_inicial > valor final)
+        Escrever("Erro: O valor inicial deve ser maior do que o final!");
+
+        Escrever("Insira o valor inicial da contagem: ");
+        Ler valor_inicial;
+        //Escrever("Insira o valor final da contagem: ");
+        //Ler valor_final;
+    FimEnquanto
+
+    contador <- valor_inicial;
+
+    Escrever("Insira o valor a incrementar: ");
+    Ler incremento;
+
+    Enquanto (contador <= valor_final )
+        Escrever (contador);
+        contador <- contador+incremento;
+    FimEnquanto
+
+Fim
+
+
+
+3)
+
+O algoritmo devolve a soma e a média de um conjunto de números, inseridos pelo utilizador.
+
+Exemplo:
+
+    "Quantos números você quer somar?:" 3
+
+    Para c de 1 até 3 Faça
+
+        "Digite o numero:" 1
+        "Digite o numero:" 2
+        "Digite o numero:" 3
+
+    A soma é: 6
+    A média é: 2
+
+
+
+4)
+
+Algoritmo Salario_sexo
+
+Inicio
+
+var salario, total_h, total_m :real;
+    sexo, continuar :string;
+
+    // inicializar numeros
+    continuar <- sim; // correção tem de inicializar
+
+    Enquanto (continuar = "sim")
+
+        Escrever("Indique o sexo do funcionário: ");
+        Ler sexo;
+        Escrever("Indique o salário do funcionário: ");
+        Ler salario;
+
+        Se (sexo = "masculino") Então
+            total_h <- total_h+salario;
+        SeNão
+            total_m <- total_m+salario;
+        FimSe
+
+        Escrever("Continuar? ");
+        Ler continuar;
+
+    FimEnquanto
+
+    Escrever("O total de salários pagos aos homens é de: "+total_h);
+    Escrever("O total de salários pagos às mulheres é de: "+total_m);
+
+Fim
+
+
+
+5)
+
+Algoritmo Numeros
+
+Inicio
+
+var numero, somatorio, menor, media, primeiro :real;
+    contar, conta_par, contador :inteiro;
+    continua :string;
+
+    Escrever("Introduza um número: ");
+    Ler primeiro;
+
+    menor <- primeiro;
+
+    somatorio <- primeiro;
+
+    contar <- 1
+    conta_par <- 0
+
+    Se primeiro % 2 = 0 Então
+        conta_par <- 1
+    FimSe
+
+    Escrever("Escrever("Quer introduzir mais números? (s/n): ");
+    Ler continua;
+
+    Se (continua == "s")
+
+        Faz
+
+            Escrever("Introduza um número: ");
+            Ler numero;
+            somatorio <- somatorio+numero;
+            contar <- contar + 1;
+
+            // media <- (somatorio+primeiro)/(contar+1);
+
+            Se (numero%2 == 0) Então
+                conta_par <- conta_par+1;
+            FimSe
+
+            Se (numero <  menor)
+                menor <- numero
+            FimSe
+
+            Escrever("Quer introduzir mais números? (s/n): ");
+            Ler continua;
+
+            //Para contador de 0 até contar
+
+            //FimPara
+
+        Enquanto (continua == "s")
+
+        media <- (somatorio)/(contar);
+
+        Escrever ("O somatório dos numeros é: "+(somatorio);
+        Escrever ("O menor valor é: "+menor);
+        Escrever ("A média entre todos os valores é: "+media);
+        //escrever conta_par
+
+    SeNão
+
+        Escrever ("O somatório dos numeros é: "+primeiro;
+        Escrever ("O menor valor é: "+primeiro);
+        Escrever ("A média entre todos os valores é: "+primeiro);
+        //escrever conta_par
+
+    FimSe
+Fim
+
